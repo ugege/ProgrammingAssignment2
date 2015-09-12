@@ -6,7 +6,7 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   solve <- solve(x) 
-  get <- function() x # a function that returns the matrix whose inverse is to be calculated
+  get <- function() x 
   setsolve <- function (solve) m <<- solve 
   getinverse <-  function() m 
   r <-list(set = set, get = get, setsolve = setsolve, getinverse = getinverse) 
